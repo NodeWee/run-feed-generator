@@ -40,5 +40,7 @@ jobs:
     - name: Install programs dependencies
       run: if [ -f programs/r.txt ]; then pip install -r programs/r.txt; fi
     - name: Excute programs
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       run: |
         python programs/main.py
