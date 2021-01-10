@@ -1,8 +1,8 @@
-name: excute feed generator
+name: hour-task
 
 on:
   schedule:
-      - cron:  '*/30 * * * *' # every 30 mins
+      - cron:  '*/60 * * * *'
       
 jobs:
   build:
